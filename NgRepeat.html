@@ -1,2 +1,12 @@
-<div>
-</div>
+<div ng-app="" ng-init="names=[
+ {name:'Yogi',country:'India'},
+ {name:'Yugendhar',country:'France'},
+ {name:'Mohan',country:'United States'}]">
+
+<ul>
+   <li ng-repeat="x in names">
+     {{ x.name + ', ' + x.country }}
+  </li>
+</ul>
+
+</div> 
